@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{
+			width: 1000px;
+			height: 600px;
+			background-color: red;
+		}
+		.absolute{
+			background-color: blue;
+			position: absolute;
+			z-index: 0;
+		}
+		.relative{
+			position: relative;
+		}
+		section{
+			display: flex;
+		}
+		ul{
+			display: flex;
+		}
+		ul>li{
+			margin: 0px 10px;
+		}
+		ol>li{
+			float: left;
+			z-index: 1000;
+		}
+		ol:after{
+			content: " ";
+			display: block;
+			clear: both;
+		}
+
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div class="absolute"></div>
+	<div class="relative"></div>
+	<section>
+		<ul>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+		</ul>
+		<ul>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+		</ul>
+		<ul>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+			<li><a href="#">测试</a></li>
+		</ul>
+	</section>
+	<div class="absolute"></div>
+	<div></div>
+	<div></div>
+	<div class="absolute"></div>
+	<ol>
+		<li><a href="#">测试</a></li>
+		<li><a href="#">测试</a></li>
+		<li><a href="#">测试</a></li>
+		<li><a href="#">测试</a></li>
+		<li><a href="#">测试</a></li>
+		<li><a href="#">测试</a></li>
+		<li><a href="#">测试</a></li>
+		<li><a href="#">测试</a></li>
+		<li><a href="#">测试</a></li>
+		<li><a href="#">测试</a></li>
+	</ol>
+</body>
+</html>

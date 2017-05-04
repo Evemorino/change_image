@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style-1.css">
+</head>
+<body>
+	<section class="container">
+		<div class="area">
+		<!-- btn  -->
+			<div class="btn">
+				
+				<input type="radio" name="img-btn" class="img-btn img-btn-1" id="img-btn-1" checked>
+				<label for="img-btn-1" class="img-label img-label-1">1</label>
+				
+				<input type="radio" name="img-btn" class="img-btn img-btn-2" id="img-btn-2">
+				<label for="img-btn-2" class="img-label img-label-2">2</label>
+				
+				<input type="radio" name="img-btn" class="img-btn img-btn-3" id="img-btn-3">
+				<label for="img-btn-3" class="img-label img-label-3">3</label>
+				
+				<input type="radio" name="img-btn" class="img-btn img-btn-4" id="img-btn-4">
+				<label for="img-btn-4" class="img-label img-label-4">4</label>
+			</div>
+		<!-- img -->
+			<div class="img">
+				<div class="img-div img-div-1"></div>
+				<div class="img-div img-div-2"></div>
+				<div class="img-div img-div-3"></div>
+				<div class="img-div img-div-4"></div>
+			</div>
+		</div>	
+	</section>
+</body>
+</html>

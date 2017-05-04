@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	nav{
+		position: relative;
+	}
+	section{
+		margin: 100px 0px;
+		position: relative;
+	}
+		nav>ul>li{
+			list-style: none;
+			text-align: center;
+			width: 100px;
+			height: 50px;
+			line-height: 50px;
+			float: left;
+		}
+		nav>ul>li:nth-of-type(1){
+			float: right;
+		}
+		nav>ul>li:nth-of-type(2){
+			float: right;
+		}
+		nav>ul>li:nth-of-type(3){
+			float: right;
+		}
+		nav::after{
+			content: " ";
+			display: block;
+			clear: both;
+		}
+
+		section>ul>li{
+			width: 120px;
+			height: 50px;
+			float: left;
+			z-index: -100;
+		}
+		section::after{
+			content: " ";
+			display: block;
+			clear: both;
+		}
+		section>ul{
+		}
+/*		section>ul::after{
+			content: " ";
+			display: block;
+			clear: both;
+		}*/
+		section>ul>div{
+			width: 600px;
+			height: 50px;
+			background-color: rgba(192,192,192,1);
+		}
+		footer{
+			margin: 100px 0px;
+		}
+		footer>.absolute{
+			width: 800px;
+			height: 300px;
+			background-color: red;
+			position: absolute;
+			z-index: -1;
+		}
+		footer>.static{
+			width: 600px;
+			height: 400px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">测试1</a></li>
+			<li><a href="#">测试2</a></li>
+			<li><a href="#">测试3</a></li>
+			<li><a href="#">测试4</a></li>
+			<li><a href="#">测试5</a></li>
+			<li><a href="#">测试6</a></li>
+			<li><a href="#">测试7</a></li>
+			<li><a href="#">测试8</a></li>
+			<li><a href="#">测试9</a></li>
+			<li><a href="#">测试10</a></li>
+		</ul>
+	</nav>
+	<section>
+		<ul>
+			<li><a href="#">测试1</a></li>
+			<li><a href="#">测试2</a></li>
+			<li><a href="#">测试3</a></li>
+			<li><a href="#">测试4</a></li>
+			<li><a href="#">测试5</a></li>
+			<li><a href="#">测试6</a></li>
+			<li><a href="#">测试7</a></li>
+			<li><a href="#">测试8</a></li>
+			<li><a href="#">测试9</a></li>
+			<li><a href="#">测试10</a></li>
+			<div></div>
+		</ul>
+	</section>
+	<footer>
+		<div class="absolute"></div>
+		<div class="static"></div>
+	</footer>
+</body>
+</html>
